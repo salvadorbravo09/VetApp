@@ -7,11 +7,11 @@ import java.util.Optional;
 
 public interface IOwnerService {
 
-    List<Owner> getAllOwners();
+    List<Owner> findAll();
 
-    Optional<Owner> getOwnerById(Long id);
+    Optional<Owner> findByID(Long id);
 
-    Owner saveOwner(Owner owner);
+    Owner save(Owner owner);
 
-    void deleteOwner(Long id);
+    void deleteById(Long id);
 }
